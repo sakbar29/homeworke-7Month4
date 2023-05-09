@@ -1,17 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Slider from './Slider';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const images = [
+  'https://img1.akspic.ru/crops/3/6/8/1/7/171863/171863-anime-chernyj_klever_triada-yuki_tabata-chernyj_klever-rukav-1920x1080.jpg',
+  'https://img2.akspic.ru/previews/8/2/8/1/7/171828/171828-nulevaya_materiya-r_e_m-nacuki_subaru-art-anime_art-550x310.jpg',
+  'https://img3.akspic.ru/previews/5/6/6/1/7/171665/171665-rin_tosaka-luchnik-sablya-netfliks-tip_luny-550x310.jpg',
+];
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const App = () => {
+  return (
+    <div>
+      <Slider images={images} />
+    </div>
+  );
+};
+
+export default App;
